@@ -1,6 +1,6 @@
 import mongoose, { Schema, model } from 'mongoose';
 
-const mongoUrl: string = 'mongodb://mongo:27017/myDatabase';
+const mongoUrl: string = 'mongodb://mongo:27017/myDatabase';// docker run -d -v volume_database:/data/db --name mongo(thisi si what is being resolved)  --network zaid_docker -p 27017:27017 mongo
 
 // Connect to MongoDB
 mongoose.connect(mongoUrl)
